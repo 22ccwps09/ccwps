@@ -1,0 +1,222 @@
+########### Partial/Basic에 노출되는 사용자 데이터를 편집합니다. ###########
+
+###################### user/org information #####################
+user:
+  title : 냉전평화연구센터
+  tagLine : Durumi는 시민사회영역과 IT개발 영역에서 10년 이상의 경력을 가진 구성원 중심으로 구성된 5명의 개발팀입니다.
+  tel : 02-0000-0000
+  fax : 02-0000-0000
+  email : email@ccwps.org
+  representative: 강성현 연구센터장, 전갑생 연구부장
+  location : (08359) 서울시 구로구 연동로 320 성공회대학교 새천년관 지하1층
+  footer :
+    대표전화 : 02-0000-0000
+    팩스 : 02-0000-0000
+    주소 : (08359) 서울시 구로구 연동로 320 성공회대학교 새천년관 지하1층
+    이메일 : email@ccwps.org
+    냉전평화연구센터장 : 강성현 (연구소 HK교수, 열림교양대학 교수)
+    연구부장 : 전갑생 (연구소 선임연구원)
+    year : "2021"
+    url : http://ieas21.or.kr/
+    youtube : https://www.youtube.com/playlist?list=PLCNJCqoVaS60YcZyApHq9vXsNEi859VLD
+    fb : http://facebook.com
+    tw : http://twitter.com
+    instagram : http://instagram.com
+    linkedin : http://linkedin.com
+
+
+
+######## Partials/Marketing에 노출되는 사용자 데이터를 편집합니다. ########
+
+########################## slider_alpine.html(slider.json) ##########################
+
+images:
+  - src: 'https://images.unsplash.com/photo-1544427920-c49ccfb85579?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1422&q=80'
+    alt: 'Image of Black Lives Matter protest in London'
+    caption: 'Black Lives Matter - London June 2020'
+  - src: 'https://images.unsplash.com/photo-1590931511555-83151d16a146?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1525&q=80'
+    alt: 'Image of Black Lives Matter protest in Charlotte'
+    caption: 'George Floyd protests in Uptown Charlotte'
+  - src: 'https://images.unsplash.com/photo-1591030617255-43892ec644bc?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1007&q=80'
+    alt: 'A protester in Washington DC holds a sign featuring George Floyd.'
+    caption: 'A protester in Washington DC holds a sign featuring George Floyd.'    
+
+############################ featured-items ##########################
+featuredItems:
+  category : 영상으로 본 냉전아시아의 사상심리전과 정동
+  title : 연구소 대표 기록 소개
+  enable : true
+  content : 미국 국립문서기록관리청(NARA) 2관에는 한국, 북한, 그리고 아시아의 분단과 냉전, 전쟁을 주제로 군인 및 민간인(신문·잡지사, 영화사 등 소속) 스틸사진가나 영상 카메라맨이 촬영하고 제작한 사진과 영상물들이 다수 존재한다. 사진의 경우, 미군 스틸사진병 뿐 아니라 유명한 포토저널리즘 잡지사 소속 사진가들이 촬영한 사진들이 미육군통신대와 미공보원 레코드그룹(RG) 등에 대량으로 존재하는데, 전쟁과 군 관련 피사체는 물론 한국과 아시아(일본, 대만, 필리핀 등)의 냉전 사회 및 일상의 풍경을 포착하고 있다. 영상의 경우, 미군 영상카메라맨을 포함해 미국 영화사들이 촬영 제작한 자유진영의 반공 발전 심리전 영상물들이 다수 존재한다. 또한 미국 NARA 2관에는 한반도의 해방 이후 한국전쟁 전까지 북한과 소련에서 촬영한 사진과 영상 자료들도 다수 존재함. 한국전쟁 때 미군이 북한을 점령했을 때 노획한 자료들임. 북한이 해방 후 제작한 다큐 및 극 영화 자료들도 있다. 본 심포지엄에서는 이 시각자료들의 생산 및 관리 맥락을 확인할 수 있는 관련 문서 자료들도 조사 분석해서, 분단-냉전의 사상심리전과 정동의 차원에서 다룬다.
+  listItem:
+    - category : 한국전쟁
+      title : 임재근
+      description : 영상모음
+      component : https://www.youtube.com/embed/KfEK6p824o0
+      author: CCWPS
+      date: 2020-11-23
+      identifier: ccwps-01
+      author: 디스크립션 작성자
+      creator: NARA
+      url : https://www.youtube.com/embed/KfEK6p824o0
+
+    - category : 2차세계대전
+      title : 김일환 1
+      description : 미 해병 제1사단 5연대에게 포로가 된 북한인민군 소년병들. 이들은 웃옷을 벗고 무장해제를 당한 뒤 항복했다.
+      component : https://www.youtube.com/embed/SK0CF9j-uSc
+      author: CCWPS
+      date: 2020-11-23
+      identifier: ccwps-02
+      author: 디스크립션 작성자
+      creator: RG 111-LC-32406, NARA
+      url : https://www.youtube.com/embed/SK0CF9j-uSc    
+
+    - category : category
+      title : 김일환 2
+      description : 미 해병 제1사단 5연대에게 포로가 된 북한인민군 소년병들. 이들은 웃옷을 벗고 무장해제를 당한 뒤 항복했다.
+      component : https://www.youtube.com/embed/E_twoRhPk3M
+      author: CCWPS
+      date: 2020-11-23
+      identifier: ccwps-03
+      author: 디스크립션 작성자
+      creator: RG 111-LC-32529, NARA
+      url : https://www.youtube.com/embed/E_twoRhPk3M
+
+    - category : 한국전쟁
+      title : 김일환 3
+      description : 미 해병 제1사단 5연대에게 포로가 된 북한인민군 소년병들. 이들은 웃옷을 벗고 무장해제를 당한 뒤 항복했다.
+      component : https://www.youtube.com/embed/t9SoEBrc-Io
+      author: CCWPS
+      date: 2020-11-23
+      identifier: ccwps-04
+      author: 디스크립션 작성자
+      creator: RG 111-LC-33737, NARA
+      url : https://www.youtube.com/embed/t9SoEBrc-Io
+
+    - category : 2차세계대전
+      title : 김일환 4 
+      description : 미 해병 제1사단 5연대에게 포로가 된 북한인민군 소년병들. 이들은 웃옷을 벗고 무장해제를 당한 뒤 항복했다.
+      component : https://www.youtube.com/embed/MXPOgefJSqE
+      author: CCWPS
+      date: 2020-11-23
+      identifier: ccwps-05
+      author: 디스크립션 작성자
+      creator: RG 1111-LC-34807, NARA
+      url : https://www.youtube.com/embed/MXPOgefJSqE    
+
+    - category : category
+      title : 전갑생
+      description : 미 해병 제1사단 5연대에게 포로가 된 북한인민군 소년병들. 이들은 웃옷을 벗고 무장해제를 당한 뒤 항복했다.
+      component : https://www.youtube.com/embed/lwC9uGzHgb4
+      author: CCWPS
+      date: 2020-11-23
+      identifier: ccwps-06
+      author: 디스크립션 작성자
+      creator: 영상편집본, NARA
+      url : https://www.youtube.com/embed/lwC9uGzHgb4
+
+    - category : category
+      title : 강성현 1
+      description : 미 해병 제1사단 5연대에게 포로가 된 북한인민군 소년병들. 이들은 웃옷을 벗고 무장해제를 당한 뒤 항복했다.
+      component : https://www.youtube.com/embed/7nYimlOROoE
+      author: CCWPS
+      date: 2020-11-23
+      identifier: ccwps-07
+      author: 디스크립션 작성자
+      creator: 111-ADC-8082, NARA
+      url : https://www.youtube.com/embed/7nYimlOROoE
+
+    - category : category
+      title : 강성현 2
+      description : 미 해병 제1사단 5연대에게 포로가 된 북한인민군 소년병들. 이들은 웃옷을 벗고 무장해제를 당한 뒤 항복했다.
+      component : https://www.youtube.com/embed/zVsYPsGNDho
+      author: CCWPS
+      date: 2020-11-23
+      identifier: ccwps-08
+      author: 디스크립션 작성자
+      creator: 111-ADC-8517, NARA
+      url : https://www.youtube.com/embed/zVsYPsGNDho
+
+    - category : category
+      title : 강성현 3
+      description : 미 해병 제1사단 5연대에게 포로가 된 북한인민군 소년병들. 이들은 웃옷을 벗고 무장해제를 당한 뒤 항복했다.
+      component : https://www.youtube.com/embed/kxy8DDZyLT4
+      author: CCWPS
+      date: 2020-11-23
+      identifier: ccwps-09
+      author: 디스크립션 작성자
+      creator: 111-LC-29589, NARA
+      url : https://www.youtube.com/embed/kxy8DDZyLT4
+
+    - category : category
+      title : 정영신
+      description : 미 해병 제1사단 5연대에게 포로가 된 북한인민군 소년병들. 이들은 웃옷을 벗고 무장해제를 당한 뒤 항복했다.
+      component : https://www.youtube.com/embed/mmH1yYhYhis
+      author: CCWPS
+      date: 2020-11-23
+      identifier: ccwps-10
+      author: 디스크립션 작성자
+      creator: 영상편집본, NARA
+      url : https://www.youtube.com/embed/mmH1yYhYhis    
+
+############################ hero-right/left ##########################
+heroRight:
+  enable : true
+  title : 성공회대학교 동아시아연구소
+  subtitle : 냉전평화연구센터 심포지엄
+  content : <영상으로 본 냉전아시아의 사상심리전과 정동> 미군의 한국전쟁 및 냉전 영상을 중심으로. 일시 - 2021년 3월 27일(토) 13시-18시20분
+
+
+  image : img/poster_02.jpg
+  # button
+  buttonOne:
+    enable : true
+    label : 일반참가자 구글 폼 신청링크
+    url : https://forms.gle/hggXQrF56hZn5atg9
+  buttonTwo:
+    enable : true
+    label : 줌 웨비나 참가링크
+    url : https://us02web.zoom.us/j/83405501877?pwd=TnpDSVFCWG94YVRBSFVuTmdtOGMvUT09
+
+
+############################ two box ##########################
+twobox:
+  title : 2box 설명
+  firstBox:
+    - title : Free 버전
+      content : Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque praesentium nisi officiis maiores quia sapiente totam omnis vel sequi corporis ipsa incidunt reprehenderit recusandae maxime perspiciatis iste placeat architecto, mollitia delectus ut ab quibusdam. Magnam cumque numquam tempore reprehenderit illo, unde cum omnis vel sed temporibus, repudiandae impedit nam ad enim porro, qui labore fugiat quod suscipit fuga necessitatibus. Perferendis, ipsum? Cum, reprehenderit. Sapiente atque quam vitae, magnam dolore consequatur temporibus harum odit ab id quo qui aspernatur aliquid officiis sit error asperiores eveniet quibusdam, accusantium enim recusandae quas ea est! Quaerat omnis, placeat vitae laboriosam doloremque recusandae mollitia minima!
+      urlLabel : 더 알아보기
+      url : http://durumi.io
+
+  secondBox:
+    - title : Custom 버전
+      content : Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque praesentium nisi officiis maiores quia sapiente totam omnis vel sequi corporis ipsa incidunt reprehenderit recusandae maxime perspiciatis iste placeat architecto, mollitia delectus ut ab quibusdam. Magnam cumque numquam tempore reprehenderit illo, unde cum omnis vel sed temporibus, repudiandae impedit nam ad enim porro, qui labore fugiat quod suscipit fuga necessitatibus. Perferendis, ipsum? Cum, reprehenderit. Sapiente atque quam vitae, magnam dolore consequatur temporibus harum odit ab id quo qui aspernatur aliquid officiis sit error asperiores eveniet quibusdam, accusantium enim recusandae quas ea est! Quaerat omnis, placeat vitae laboriosam doloremque recusandae mollitia minima!
+      urlLabel : 더 알아보기
+      url : http://durumi.io
+
+
+############################ FAQ ##########################
+faq:
+  title : 자주 묻는 질문
+  enable : true
+  content : 자주 묻는 질문들을 모아놓았습니다. 궁금증을 해소하세요.
+  url : http://ccwps.org
+  listItem:
+
+    - question : 아카이브에 포함된 데이터는 어디서 가져오는 것인가요 ?
+      answer : 폴더형태로 저장되어 있는 사용자의 개별 클라우드 서비스(드롭박스, 아마존 S3)와 메타정보가 기록된 공개된 엑셀파일을 디지털아카이브에 노출합니다. 따라서, 완전히 공개된 자료를 처리하는데 도움이 되는 서비스입니다. 
+
+    - question : 관련된 자료들을 기사/논문/영상에 참조하기 위해서는 어떤 규정을 지켜야 하나요 ?
+      answer : 현재 보고 있는 기사 / 논문 / 영상은 완전히 공개되어 있는 자료입니다. 영상에 대한 해제, 코멘트 등에 대한 번역저작권은 "성공회대학교 동아시아연구소 냉전평화연구센터의 자료"임을 밝히고 사용해 주세요. 
+
+####################### call to actions #####################
+
+cta:
+  enable : true
+  category : 냉전평화연구센터
+  title : 본 연구소는 최근 아래의 사업과 연구를 진행해 오고 있습니다.
+  content : "2015년 한산도(추봉, 용초) 포로수용소 기록화사업 용역, 2016년 거제도포로수용소 유네스코 세계기록(문화)유산 등재를 위한 타당성 용역  2017년 한국전쟁기 포로수용소 기록물 자료수집 및 연구해제, 2018년 한국전쟁기 포로수용소 세계기록유산 등재 및 자료수집, 2019년 한국전쟁기 포로수용소 세계기록유산 등재 용역을 비롯해 한국전쟁기 포로수용소 문서, 사진, 영상, 수용소 설계도면 및 지도 자료 발굴"
+  # button
+  button:
+    enable : true
+    label : 냉전평화연구센터 소개보기
+    url : http://ieas21.or.kr/%ec%97%b0%ea%b5%ac%ec%86%8c-%ec%86%8c%ea%b0%9c/%eb%83%89%ec%a0%84%ed%8f%89%ed%99%94%ec%97%b0%ea%b5%ac%ec%84%bc%ed%84%b0/
