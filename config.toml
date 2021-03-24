@@ -1,0 +1,8 @@
+baseURL = "https://ccwps.org"
+languageCode = "ko-kr"
+title = "냉전평화연구센터"
+theme = "tailwind-aa-theme"
+disableKinds = ["taxonomy", "term"]
+
+[build]
+writeStats = true
