@@ -1,0 +1,37 @@
+<!-- call to actions <-->
+<section class="pt-16 pb-16 bg-blue-600">
+  <div class="container px-4 mx-auto">
+    <div class="max-w-2xl mx-auto text-center">
+      <span class="inline-block text-xs py-1 px-3 bg-blue-500 text-white font-semibold rounded-xl">
+      	{{ .Site.Data.marketing.cta.category }}
+      </span>
+      <h2 class="my-3 text-3xl md:text-4xl text-white font-bold font-heading">
+      	{{ .Site.Data.marketing.cta.title }}
+      </h2>
+      <!-- <p class="text-sm md:text-base text-white">{{ .Site.Data.marketing.cta.content }}</p> -->
+      <p class="text-sm md:text-base text-white">
+        <ul >
+          <li class="text-sm md:text-base text-white text-left"> - (진행사업)통영 추봉도와 용호도 포로수용소 종합정비계획 수립 용역(통영시)(2021.2-2021.12) </li>
+          <li class="text-sm md:text-base text-white text-left"> - (완료사업)2017-2018년 통영시 근현대 건조물 문헌 및 현장 조사 사업 참여</li> 
+          <li class="text-sm md:text-base text-white text-left"> - 2019년까지 총 10건의 국가등록문화재와 문화재청의 '근대역사문화공간 재생활성화 사업 (5년간 500억)' 선정에 기초자료 제공 등 역할 </li> 
+          <li class="text-sm md:text-base text-white text-left"> - 2018년 통영 서호동 간장공장 기록화 사업 참여와 국가등록문화재등록 협력</li> 
+          <li class="text-sm md:text-base text-white text-left"> - 2019년 한국전쟁기 포로수용소 영상 및 사진 콘텐츠 조사 수집 해제</li> 
+          <li class="text-sm md:text-base text-white text-left"> - 통영 용호 및 추봉도 포로수용소 영상 및 사진 수집 콘텐츠 제작</li> 
+        </ul>
+      </p>
+    </div>
+    <br><br>
+    <div class="flex flex-wrap">
+      {{ range $.Site.Data.marketing.cta.listItem }}
+      <div class="xl:w-1/4 lg:w-1/2 md:w-full px-8 py-6 border-l-2 border-white border-opacity-60">
+        <h2 class="text-lg sm:text-xl text-white font-medium title-font mb-2">{{ .title }}</h2>
+        <p class="leading-relaxed text-white mb-4">{{ .body }}</p>
+      </div>
+      {{ end }}  
+    </div>
+    <div class="max-w-xl mx-auto text-center">
+      <div class="mt-10"><a class="inline-block py-4 px-8 text-xs text-blue-600 hover:text-white font-semibold leading-none bg-white hover:bg-blue-600 border hover:border-white rounded transition duration-300" href="{{ .Site.Data.marketing.cta.button.url }}">{{ .Site.Data.marketing.cta.button.label }}</a></div>
+    </div>  
+
+  </div>
+</section>

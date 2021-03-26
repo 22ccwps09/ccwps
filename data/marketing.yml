@@ -45,118 +45,109 @@ images:
 ############################ featured-items ##########################
 featuredItems:
   category : 영상으로 본 냉전아시아의 사상심리전과 정동
-  title : 연구소 대표 기록 소개
+  title : 발표 합본 영상
   enable : true
   content : 미국 국립문서기록관리청(NARA) 2관에는 한국, 북한, 그리고 아시아의 분단과 냉전, 전쟁을 주제로 군인 및 민간인(신문·잡지사, 영화사 등 소속) 스틸사진가나 영상 카메라맨이 촬영하고 제작한 사진과 영상물들이 다수 존재한다. 사진의 경우, 미군 스틸사진병 뿐 아니라 유명한 포토저널리즘 잡지사 소속 사진가들이 촬영한 사진들이 미육군통신대와 미공보원 레코드그룹(RG) 등에 대량으로 존재하는데, 전쟁과 군 관련 피사체는 물론 한국과 아시아(일본, 대만, 필리핀 등)의 냉전 사회 및 일상의 풍경을 포착하고 있다. 영상의 경우, 미군 영상카메라맨을 포함해 미국 영화사들이 촬영 제작한 자유진영의 반공 발전 심리전 영상물들이 다수 존재한다. 또한 미국 NARA 2관에는 한반도의 해방 이후 한국전쟁 전까지 북한과 소련에서 촬영한 사진과 영상 자료들도 다수 존재함. 한국전쟁 때 미군이 북한을 점령했을 때 노획한 자료들임. 북한이 해방 후 제작한 다큐 및 극 영화 자료들도 있다. 본 심포지엄에서는 이 시각자료들의 생산 및 관리 맥락을 확인할 수 있는 관련 문서 자료들도 조사 분석해서, 분단-냉전의 사상심리전과 정동의 차원에서 다룬다.
   listItem:
-    - category : 한국전쟁
+
+    - category : 1부
       title : 임재근
-      description : 영상모음
+      description : (합본)교량과 철도 파괴의 사각과 정동 - 한국전쟁 대전 관련 영상을 중심으로 
       component : https://www.youtube.com/embed/KfEK6p824o0
-      author: CCWPS
-      date: 2020-11-23
+      date: 2021.03.27
       identifier: ccwps-01
-      author: 디스크립션 작성자
-      creator: NARA
+      author: 임재근
+      creator: ADC 8207, ADC 8105, ADC 812, 1ADC 8373, ADC 8401 - RG111
       url : https://www.youtube.com/embed/KfEK6p824o0
 
-    - category : 2차세계대전
-      title : 김일환 1
-      description : 미 해병 제1사단 5연대에게 포로가 된 북한인민군 소년병들. 이들은 웃옷을 벗고 무장해제를 당한 뒤 항복했다.
+    - category : 1부
+      title : 한국 문산 리틀 스위치 작전(OPERATION LITTLE SWITCH, LITTLE SWAP, TRAIN ENROUTE TO MUNSAN-NI, KOREA)
+      description : 이 영상은 1953년 4월 24일 부산에서 대구를 거쳐 문산역으로 가는 열차에서 북한인민군 부상포로 송환과 자유의 마을에 설치된 포로 인수센터 등을 보여주고 있다. 1953년 4월 20일부터 부상포로 교환이 시작되었는데 매일 부산에서 출발해 대구를 거쳐 영등포와 문산역으로 향하고 있다. 부상포로들은 열차에서 쉬면서 주변 풍경들을 보는 장면이 이채롭다. 이들은 대구역에서 잠시 쉬었다가 영등포역을 거쳐 문산역으로 향했다. 영상에는 문산역에서 대성동 자유의 마을까지 가는 과정을 보여주고 포로교환의 중요한 포인터인 인수본부와 주변 시설들을 담아내고 있다. 또한 거제도나 제주도에서 부상포로가 부산항으로 들어오는 과정을 마지막에 나온다. 이 영상은 편집되지 않은 것이다. 
       component : https://www.youtube.com/embed/SK0CF9j-uSc
-      author: CCWPS
-      date: 2020-11-23
+      date: 1953.04.24
       identifier: ccwps-02
-      author: 디스크립션 작성자
+      author: 김일환
       creator: RG 111-LC-32406, NARA
       url : https://www.youtube.com/embed/SK0CF9j-uSc    
 
-    - category : category
-      title : 김일환 2
-      description : 미 해병 제1사단 5연대에게 포로가 된 북한인민군 소년병들. 이들은 웃옷을 벗고 무장해제를 당한 뒤 항복했다.
+    - category : 1부
+      title : 리틀스위치, 한국군 제5 이동식외과병원, 문산리 LITTLE SWITCH, 5TH ROK MASH, MUNSAN-NI, KOREA
+      description : 1953년 4월 24일 문산 판문점에서 부상포로들이 교환되는 과정을 보여주고 있다. 특히 이 영상에서는 리틀스위치 작전에서 남한측으로 송환된 국군 포로들의 실내에서의 심문, 식사 등의 절차들을 담고 있다는 점에 특징적이다.
       component : https://www.youtube.com/embed/E_twoRhPk3M
-      author: CCWPS
-      date: 2020-11-23
+      date: 1953.04.25
       identifier: ccwps-03
-      author: 디스크립션 작성자
+      author: 김일환
       creator: RG 111-LC-32529, NARA
       url : https://www.youtube.com/embed/E_twoRhPk3M
 
-    - category : 한국전쟁
-      title : 김일환 3
-      description : 미 해병 제1사단 5연대에게 포로가 된 북한인민군 소년병들. 이들은 웃옷을 벗고 무장해제를 당한 뒤 항복했다.
+    - category : 1부
+      title : 빅 스위치, 문산리, 판문점 BIG SWITCH, MUNSAN-NI AND PANMUNJOM, KOREA
+      description : 이 영상에서는 1953년 8월의 빅스위치 작전의 8월 6일자 작전의 모습을 보여준다. 
       component : https://www.youtube.com/embed/t9SoEBrc-Io
-      author: CCWPS
-      date: 2020-11-23
+      date: 2021.03.27
       identifier: ccwps-04
-      author: 디스크립션 작성자
+      author: 김일환
       creator: RG 111-LC-33737, NARA
       url : https://www.youtube.com/embed/t9SoEBrc-Io
 
-    - category : 2차세계대전
-      title : 김일환 4 
-      description : 미 해병 제1사단 5연대에게 포로가 된 북한인민군 소년병들. 이들은 웃옷을 벗고 무장해제를 당한 뒤 항복했다.
+    - category : 1부
+      title : 한국 포항, 복원작전(한국군이 석방한 북한군 포로)(OPERATION RECOVERY (RELEASE OF NORTH KOREAN SOLDIERS WHO WERE TAKEN PRISONERS OF WAR BY THE SOUTH KOREAN ARMY), POHANG DONG, KOREA)
+      description : 1954년 1월 21일 판문점에서 석방된 미송환포로들이 포항 신병훈련소에 입영하는 모습을 보여주고 있다. 
       component : https://www.youtube.com/embed/MXPOgefJSqE
-      author: CCWPS
-      date: 2020-11-23
+      date: 2021.01.21 - 2021.01.23
       identifier: ccwps-05
-      author: 디스크립션 작성자
+      author: 김일환
       creator: RG 1111-LC-34807, NARA
       url : https://www.youtube.com/embed/MXPOgefJSqE    
 
-    - category : category
+    - category : 2부
       title : 전갑생
-      description : 미 해병 제1사단 5연대에게 포로가 된 북한인민군 소년병들. 이들은 웃옷을 벗고 무장해제를 당한 뒤 항복했다.
+      description : (합본)미군의 북한 영상 노획과 심리전 영화 제작 The Big Lie와 The Big Picture를 중심으로
       component : https://www.youtube.com/embed/lwC9uGzHgb4
-      author: CCWPS
-      date: 2020-11-23
+      date: 1951 - 1953
       identifier: ccwps-06
-      author: 디스크립션 작성자
-      creator: 영상편집본, NARA
+      author: 전갑생
+      creator: RG 306-LSS-1627,RG 111-TV-255, RG 306-2781
       url : https://www.youtube.com/embed/lwC9uGzHgb4
 
     - category : category
       title : 강성현 1
-      description : 미 해병 제1사단 5연대에게 포로가 된 북한인민군 소년병들. 이들은 웃옷을 벗고 무장해제를 당한 뒤 항복했다.
+      description : 한국전쟁 영상 자료, 어떻게 연구할 것인가
       component : https://www.youtube.com/embed/7nYimlOROoE
-      author: CCWPS
-      date: 2020-11-23
+      date: 2021.03.27
       identifier: ccwps-07
-      author: 디스크립션 작성자
+      author: 강성현
       creator: 111-ADC-8082, NARA
       url : https://www.youtube.com/embed/7nYimlOROoE
 
     - category : category
       title : 강성현 2
-      description : 미 해병 제1사단 5연대에게 포로가 된 북한인민군 소년병들. 이들은 웃옷을 벗고 무장해제를 당한 뒤 항복했다.
+      description : 한국전쟁 영상 자료, 어떻게 연구할 것인가
       component : https://www.youtube.com/embed/zVsYPsGNDho
-      author: CCWPS
-      date: 2020-11-23
+      date: 2021.03.27
       identifier: ccwps-08
-      author: 디스크립션 작성자
+      author: 강성현
       creator: 111-ADC-8517, NARA
       url : https://www.youtube.com/embed/zVsYPsGNDho
 
     - category : category
       title : 강성현 3
-      description : 미 해병 제1사단 5연대에게 포로가 된 북한인민군 소년병들. 이들은 웃옷을 벗고 무장해제를 당한 뒤 항복했다.
+      description : 한국전쟁 영상 자료, 어떻게 연구할 것인가
       component : https://www.youtube.com/embed/kxy8DDZyLT4
-      author: CCWPS
-      date: 2020-11-23
+      date: 2021.03.27
       identifier: ccwps-09
-      author: 디스크립션 작성자
+      author: 강성현
       creator: 111-LC-29589, NARA
       url : https://www.youtube.com/embed/kxy8DDZyLT4
 
-    - category : category
+    - category : 2부
       title : 정영신
-      description : 미 해병 제1사단 5연대에게 포로가 된 북한인민군 소년병들. 이들은 웃옷을 벗고 무장해제를 당한 뒤 항복했다.
+      description : 미군의 대한원조 영상 속에서 재건되는 전후 주체 The Big Picture 시리즈의 대한원조 영상을 중심으로
       component : https://www.youtube.com/embed/mmH1yYhYhis
-      author: CCWPS
-      date: 2020-11-23
+      date: 2021.03.27
       identifier: ccwps-10
-      author: 디스크립션 작성자
-      creator: 영상편집본, NARA
+      author: 정영신
+      creator: 합본, NARA
       url : https://www.youtube.com/embed/mmH1yYhYhis    
 
 ############################ hero-right/left ##########################
@@ -171,8 +162,8 @@ heroRight:
   # button
   buttonOne:
     enable : true
-    label : 일반참가자 구글 폼 신청링크
-    url : https://forms.gle/hggXQrF56hZn5atg9
+    label : 유투브(실시간)
+    url : https://youtu.be/4mhSsF5HrwY
   buttonTwo:
     enable : true
     label : 줌 웨비나 참가링크
@@ -203,8 +194,11 @@ faq:
   url : http://ccwps.org
   listItem:
 
-    - question : 아카이브에 포함된 데이터는 어디서 가져오는 것인가요 ?
-      answer : 폴더형태로 저장되어 있는 사용자의 개별 클라우드 서비스(드롭박스, 아마존 S3)와 메타정보가 기록된 공개된 엑셀파일을 디지털아카이브에 노출합니다. 따라서, 완전히 공개된 자료를 처리하는데 도움이 되는 서비스입니다. 
+    - question : 냉전평화연구센터의 설립 목적
+      answer : 동아시아 및 한국의 전쟁･냉전, 평화, 일제의 식민지배 피해 및 일본군 ‘위안부’ 문제 관련 자료 조사와 연구, 교육 등의 활동을 통해 학문 발전에 이바지하는 것을 설립 목적으로 한다.(연구소 규정 제2절 3조)
+
+    - question : 냉전평화연구센터의 비전
+      answer : 1.냉전 아시아와 평화 연구의 거점 / 2. 냉전 평화 디지털 아카이브 구축 / 3. (탈)냉전 평화 교육과 교류의 허브
 
     - question : 관련된 자료들을 기사/논문/영상에 참조하기 위해서는 어떤 규정을 지켜야 하나요 ?
       answer : 현재 보고 있는 기사 / 논문 / 영상은 완전히 공개되어 있는 자료입니다. 영상에 대한 해제, 코멘트 등에 대한 번역저작권은 "성공회대학교 동아시아연구소 냉전평화연구센터의 자료"임을 밝히고 사용해 주세요. 
@@ -213,9 +207,20 @@ faq:
 
 cta:
   enable : true
-  category : 냉전평화연구센터
-  title : 본 연구소는 최근 아래의 사업과 연구를 진행해 오고 있습니다.
-  content : "2015년 한산도(추봉, 용초) 포로수용소 기록화사업 용역, 2016년 거제도포로수용소 유네스코 세계기록(문화)유산 등재를 위한 타당성 용역  2017년 한국전쟁기 포로수용소 기록물 자료수집 및 연구해제, 2018년 한국전쟁기 포로수용소 세계기록유산 등재 및 자료수집, 2019년 한국전쟁기 포로수용소 세계기록유산 등재 용역을 비롯해 한국전쟁기 포로수용소 문서, 사진, 영상, 수용소 설계도면 및 지도 자료 발굴"
+  category : 냉전평화연구센터 센터 성과
+  title : 사업, 연구, 정책개발, 학술회의 및 교육
+  content : (진행사업)통영 추봉도와 용호도 포로수용소 종합정비계획 수립 용역(통영시)(2021.2-2021.12)  / (완료사업)2017-2018년 통영시 근현대 건조물 문헌 및 현장 조사 사업 참여 / 2019년까지 총 10건의 국가등록문화재와 문화재청의 '근대역사문화공간 재생활성화 사업 (5년간 500억)' 선정에 기초자료 제공 등 역할 / 2018년 통영 서호동 간장공장 기록화 사업 참여와 국가등록문화재등록 협력 / 2019년 한국전쟁기 포로수용소 영상 및 사진 콘텐츠 조사 수집 해제, 통영 용호 및 추봉도 포로수용소 영상 및 사진 수집 콘텐츠 제작
+  listItem:
+  
+    - title : 1. 자료 조사와 연구
+      body : 통영시 근대건조물 연구용역 / 서호동 장공장 기록화 사업 / 파주 DMZ 및 접경지역 국외자료조사 해제연구
+    - title : 2. 정책개발
+      body : 여성인권평화재단 설립을 위한 로드맵 마련(여성가족부 2019.10-2021.11)
+    - title : 3. 학술회의
+      body : 영상으로 본 냉전아시아의 사상심리전과 정동 (2021.3.27)
+    - title : 4. 교육
+      body : 일본군 ‘위안부’ 교육 프로그램 개발 및 운영(서울시 2020.2-2021.9) / 청년세대를 위한 일본군 ‘위안부’ 교육 커리큘럼 개발 및 운영(정의연)
+
   # button
   button:
     enable : true
