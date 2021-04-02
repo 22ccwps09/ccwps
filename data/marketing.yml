@@ -6,14 +6,14 @@ user:
   tagLine : 동아시아 및 한국의 전쟁･냉전, 평화, 일제의 식민지배 피해 및 일본군 ‘위안부’ 문제 관련 자료 조사와 연구, 교육 등의 활동을 통해 학문 발전에 이바지하는 것을 설립 목적으로 하며, (탈)냉전 평화 연구의 거점 싱크탱크, 아시아 최고 수준의 냉전 평화 아카이브, (탈)냉전 평화 교육, 정책 개발, 교류 협력의 허브를 구축하는 비전을 갖고 있다.
   tel : 02-0000-0000
   fax : 02-0000-0000
-  email : email@ccwps.org
+  email : kangsh@skhu.ac.kr
   representative: 강성현 연구센터장, 전갑생 연구부장
   location : (08359) 서울시 구로구 연동로 320 성공회대학교 새천년관 지하1층
   footer :
     대표전화 : 02-0000-0000
     팩스 : 02-0000-0000
     주소 : (08359) 서울시 구로구 연동로 320 성공회대학교 새천년관 지하1층
-    이메일 : email@ccwps.org
+    이메일 : kangsh@skhu.ac.kr
     냉전평화연구센터장 : 강성현 (연구소 HK교수, 열림교양대학 교수)
     연구부장 : 전갑생 (연구소 선임연구원)
     year : "2021"
@@ -162,7 +162,7 @@ heroRight:
   # button
   buttonOne:
     enable : true
-    label : 유투브(실시간)
+    label : 심포지엄 영상보기
     url : https://youtu.be/4mhSsF5HrwY
   buttonTwo:
     enable : true
