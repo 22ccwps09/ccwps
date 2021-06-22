@@ -7,3 +7,15 @@ disableKinds = ["taxonomy", "term"]
 
 [build]
 writeStats = true
+
+[menu]
+
+  [[menu.main]]
+  name = "홈"
+  URL = "/"
+  weight = 1
+
+  [[menu.main]]
+  name = "심포지엄 영상보기"
+  URL = "https://youtu.be/4mhSsF5HrwY"
+  weight = 2

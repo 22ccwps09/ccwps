@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>
+      {{ .Site.Title }}
+      {{ .Site.Params.description }}
+    </title>
+    <meta name="description" content="{{ .Description }}">
+    {{/* styles */}}
+    {{ $options := dict "inlineImports" true }}
+    {{ $styles := resources.Get "css/styles.css" }}
+    {{ $styles = $styles | resources.PostCSS $options }}
+    {{ if  hugo.IsProduction  }}
+      {{ $styles = $styles | minify | fingerprint | resources.PostProcess }}
+    {{ end }}
+    <link href="{{ $styles.RelPermalink }}" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width">
+  </head>
+  {{ partial "basic/header_old.html" . }}
+  <body>
+    <div class="xl:mx-auto lg:mx-auto md:mx-auto sm:mx-auto">
+      {{ block "main" . }}{{ end }}
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
+  </body>
+  {{ partial "basic/footer.html" . }}
+</html>
