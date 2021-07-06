@@ -17,7 +17,7 @@
     <link href="{{ $styles.RelPermalink }}" rel="stylesheet" />
     <meta name="viewport" content="width=device-width">
   </head>
-  {{ partial "basic/header_old.html" . }}
+  {{ partial "basic/header.html" . }}
   <body>
     <div class="xl:mx-auto lg:mx-auto md:mx-auto sm:mx-auto">
       {{ block "main" . }}{{ end }}
@@ -25,5 +25,5 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.min.js" defer></script>
     <script src="https://cdn.jsdelivr.net/gh/alpinejs/alpine@v2.x.x/dist/alpine.min.js" defer></script>
   </body>
-  {{ partial "basic/footer.html" . }}
+  {{ partial "basic/footer-wide.html" . }}
 </html>

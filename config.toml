@@ -3,19 +3,34 @@ languageCode = "ko-kr"
 title = "냉전평화연구센터"
 description = "동아시아 및 한국의 전쟁･냉전, 평화, 일제의 식민지배 피해 및 일본군 ‘위안부’ 문제 관련 자료 조사와 연구, 교육 등의 활동을 통해 학문 발전에 이바지하는 것을 설립 목적으로 하며, (탈)냉전 평화 연구의 거점 싱크탱크, 아시아 최고 수준의 냉전 평화 아카이브, (탈)냉전 평화 교육, 정책 개발, 교류 협력의 허브를 구축하는 비전을 갖고 있다."
 theme = "tailwind-aa-theme"
-disableKinds = ["taxonomy", "term"]
 
 [build]
 writeStats = true
 
 [menu]
 
-  [[menu.main]]
-  name = "홈"
-  URL = "/"
-  weight = 1
-
-  [[menu.main]]
-  name = "심포지엄 영상보기"
-  URL = "https://youtu.be/4mhSsF5HrwY"
+ [[menu.main]]
+  name = "Browse"
+  URL = "/items"
   weight = 2
+
+ [[menu.main]]
+  name = "Search"
+  URL = "/search"
+  weight = 3  
+
+ [[menu.main]]
+  name = "Collections"
+  URL = "/tags"
+  weight = 4
+
+
+ [module]
+
+  [[module.mounts]]
+    source = "themes/tailwind-aa-theme/exampleSite/content"
+    target = "content"
+
+  [[module.mounts]]
+    source = "themes/tailwind-aa-theme/exampleSite/static"
+    target = "static"      
