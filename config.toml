@@ -7,34 +7,51 @@ theme = [ "tailwind-aa-theme", "hugo-search-fuse-js" ]
 [build]
 writeStats = true
 
+[taxonomies]
+  tag = "tags"
+  subject = "subjects"
+  creator = "creators"
+  venue = "venues"
+  source = "sources"
+
 [menu]
 
  [[menu.main]]
-  name = "Browse"
+  name = "File Browse"
   URL = "/items"
-  weight = 2
+  weight = 1
 
  [[menu.main]]
   name = "Search"
   URL = "/search"
-  weight = 3  
+  weight = 2  
 
  [[menu.main]]
-  name = "Collections"
+  name = "Tags"
   URL = "/tags"
-  weight = 4
+  weight = 3
+
+ [[menu.main]]
+  name = "Subjects"
+  URL = "/subjects"
+  weight = 4  
+
+ [[menu.main]]
+  name = "Sources"
+  URL = "/sources"
+  weight = 5
+
+ [[menu.main]]
+  name = "Venues"
+  URL = "/venues"
+  weight = 6   
+
+ [[menu.main]]
+  name = "Post"
+  URL = "/posts"
+  weight = 7 
 
  [[menu.main]]
   name = "Sitemap"
   URL = "/sitemap.xml"
-  weight = 5
-
- [module]
-
-  [[module.mounts]]
-    source = "themes/tailwind-aa-theme/exampleSite/content"
-    target = "content"
-
-  [[module.mounts]]
-    source = "themes/tailwind-aa-theme/exampleSite/static"
-    target = "static"      
+  weight = 8
