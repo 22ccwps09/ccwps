@@ -1,0 +1,19 @@
+{{ define "header" }}
+  {{ partial "basic/header_logo.html" . }}
+{{ end }}
+
+{{ define "main" }}
+  <div class="flex flex-wrap -mb-4 md:mb-0">
+    <div class="w-full md:w-1/4 px-5 py-5 mb-4 md:mb-0 bg-gray-100">
+      <!-- {{ partial "app/browse-aside-sections.html" . }} -->
+      {{ partial "app/browse-aside-default.html" . }}
+    </div>
+    <div class="w-full h-full md:w-3/4 py-5 mb-4 md:mb-0 bg-gray-100">
+    	{{ partial "app/browse-breadcrumb.html" . }}
+    	<div class="bg-white h-full px-5 py-5 rounded-lg">
+  			<h1 class="text-2xl px-5 py-5">탐색 - {{ .Title }}</h1>
+       		{{ partial "app/simple-browse-tab" . }}
+  		</div>
+    </div>
+  </div> 
+{{ end }}
