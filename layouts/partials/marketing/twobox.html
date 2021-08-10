@@ -1,0 +1,33 @@
+<!-- 2box -->
+<section>
+	<div class="flex flex-wrap -mb-4 md:mb-0">
+	  {{ range $.Site.Data.marketing.twobox.firstBox }}
+	  <div class="bg-blue-600 dark:bg-blue-500 text-white dark:text-gray-100 w-full p-24 md:w-1/2 mb-12 md:mb-0">
+	  	<h4 class="text-5xl leading-tight font-bold font-heading">{{ .title }}</h4>
+	  	<h4 class="text-5xl mb-2 leading-tight font-bold font-heading">{{ .subtitle }}</h4>
+	  	<p class="mb-2 leading-relaxed">{{ .content }}</p>
+	  	<p class="mt-8 mb-2 leading-relaxed">
+	  		<a href="{{ .url }}">{{ .urlLabel }}
+	  			<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+	  				<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+	  		  </svg>
+	  	  </a>
+	  	</p>
+	  </div>
+	  {{ end }}
+	  {{ range $.Site.Data.marketing.twobox.secondBox }}
+	  <div class="bg-blue-50 text-blue-600 w-full p-24 md:w-1/2 mb-12 md:mb-0">
+	  	<h4 class="text-5xl leading-tight font-bold font-heading">{{ .title }}</h4>
+	  	<h4 class="text-5xl mb-2 leading-tight font-bold font-heading">{{ .subtitle }}</h4>
+	  	<p class="mb-2 leading-relaxed">{{ .content }}</p>
+	  	<p class="mt-8 mb-2 leading-relaxed">
+	  		<a href="{{ .url }}">{{ .urlLabel }}
+	  			<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+	  				<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7l5 5m0 0l-5 5m5-5H6" />
+	  		  </svg>
+				</a>
+			</p>
+	  </div>
+	  {{ end }}
+	</div>
+</section>
