@@ -1,0 +1,215 @@
+{{ define "header" }}
+  {{ partial "basic/header_logo.html" . }}
+{{ end }}
+
+{{ define "main" }}
+	<div class="flex flex-wrap -mb-4 md:mb-0">
+	  <div class="w-full md:w-1/4 px-5 py-5 mb-4 md:mb-0 text-gray-900 bg-gray-100 dark:text-gray-100 dark:bg-gray-800">
+	  	{{ partial "app/browse-aside-default.html" . }}
+	  </div>
+	  <div class="w-full md:w-3/4 pt-5 pb-20 mb-4 md:mb-0 text-gray-900 bg-gray-100 dark:text-gray-100 dark:bg-gray-800">
+	  	{{ partial "app/browse-breadcrumb.html" . }}
+	  	
+	    <!-- IDENTITY STATEMENT AREA | Summary Sections -->
+			<div class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 overflow-hidden sm:rounded-lg">
+			  <div class="px-5 py-5 sm:px-6">
+			    <h3 class="text-4xl leading-6 font-medium  py-5 mb-4">
+			      {{ .Title }} 
+			    </h3>
+			    <!-- item IMG / PDF / Youtube -->
+			    <div class="mt-1 max-w-2xl">
+			    	{{ if .Params.components }}		
+			      	{{ range .Params.Components }}
+			      		<img class="h-full rounded w-full object-cover object-center mb-6" src="{{ . | absURL }}" alt="item object">
+			      	{{ end }}	
+			    	{{ else }}
+			    		<img class="h-full rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/462x384" alt="item object">
+			    	{{ end }}
+			    </div>
+			  </div>
+			  <!--  IDENTITY STATEMENT AREA -->
+			  <h2 class="text-2xl leading-6 font-medium px-5 py-1 mb-4">
+			  	IDENTITY
+			  </h2>
+			  <div class="border-t border-b border-gray-200 mb-4">
+			    <dl>
+			    	{{ if .Params.Reference_code }}
+			      <div class="px-5 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+			        <dt class="text-sm font-medium">
+			          Reference code(s)
+			        </dt>
+			        <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+			         {{ .Params.Reference_code}}
+			        </dd>
+			      </div>
+			      {{ end }}
+			      <!--  Title 은 최소 포함되어 있을것으로 판단 -->
+			      <div class="bg-white dark:bg-gray-900 px-5 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+			        <dt class="text-sm font-medium">
+			          Title
+			        </dt>
+			        <dd class="mt-1 text-sm sm:mt-0 sm:col-span-2">
+			          {{ .Title }}
+			        </dd>
+			      </div>
+			      {{ if .Date }}
+			      <div class="bg-gray-50 dark:bg-gray-800 px-5 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+			        <dt class="text-sm font-medium text-gray-500">
+			          Date(s)
+			        </dt>
+			        <dd class="mt-1 text-sm sm:mt-0 sm:col-span-2">
+			          {{ .Date }}
+			        </dd>
+			      </div>
+				    {{ end }}
+				    {{ if .Params.Level_of_description }}
+			      <div class="bg-white dark:bg-gray-900 px-5 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+			        <dt class="text-sm font-medium">
+			          Level of description
+			        </dt>
+			        <dd class="mt-1 text-sm sm:mt-0 sm:col-span-2">
+			          {{ .Params.Level_of_description }}
+			        </dd>
+			      </div>
+			      {{ end }}
+			      {{ if .Params.Media_type }}
+			      <div class="bg-gray-50 dark:bg-gray-800 px-5 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+			        <dt class="text-sm font-medium">
+			          Media Type
+			        </dt>
+			        <dd class="mt-1 text-sm sm:mt-0 sm:col-span-2">
+			          {{ .Params.Media_type }}
+			        </dd>
+			      </div>
+			      {{ end }}
+			      {{ if .Params.Description }}
+			      <div class="bg-white dark:bg-gray-900 px-5 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+			        <dt class="text-sm font-medium">
+			          Description
+			        </dt>
+			        <dd class="mt-1 text-sm sm:mt-0 sm:col-span-2">
+			          {{ .Params.Description }}
+			        </dd>
+			      </div>
+			      {{ end }}
+			      {{ if .Params.Link }}
+			      <div class="bg-gray-50 dark:bg-gray-800 px-5 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+			        <dt class="text-sm font-medium">
+			          Link
+			        </dt>
+			        <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
+			          <a href="{{ .Params.Link | absURL }}" class="font-medium text-blue-600 hover:text-blue-500 dark:text-blue-500 dark:hover:text-blue-600" target="_blank">{{ .Params.Link }}</a>
+			        </dd>
+			      </div>
+			      {{ end }}		
+			      {{ if .Params.components }}	     		   	      
+			      <div class="bg-white dark:bg-gray-900 px-5 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+			        <dt class="text-sm font-medium">
+			          Components
+			        </dt>
+			        <dd class="mt-1 mb-1 text-sm sm:mt-0 sm:col-span-2">
+			        	{{ range .Params.Components }}  
+			          <ul class="border border-gray-200 rounded-md divide-y divide-gray-200">
+			            <li class="pl-3 pr-4 py-3 flex items-center justify-between text-sm">
+			              <div class="w-0 flex-1 flex items-center">
+			                <!-- Heroicon name: solid/paper-clip -->
+			                <svg class="flex-shrink-0 h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
+			                  <path fill-rule="evenodd" d="M8 4a3 3 0 00-3 3v4a5 5 0 0010 0V7a1 1 0 112 0v4a7 7 0 11-14 0V7a5 5 0 0110 0v4a3 3 0 11-6 0V7a1 1 0 012 0v4a1 1 0 102 0V7a3 3 0 00-3-3z" clip-rule="evenodd" />
+			                </svg>
+			                <span class="ml-2 flex-1 w-0 truncate">
+			                  {{ . }}
+			                </span>
+			              </div>
+			              <div class="ml-4 flex-shrink-0">
+			                <a href="{{ . | absURL }}" class="font-medium text-blue-600 hover:text-blue-500 dark:text-blue-500 dark:hover:text-blue-600" target="_blank" download >
+			                  Download
+			                </a>
+			              </div>
+			            </li>
+			          </ul>
+			          {{ end }} 
+			        </dd>
+			      </div>
+			      {{ else }}
+			      {{ end }}
+			    </dl>
+			  </div>
+			  <!--  CONTEXT & CONTENT & STRUCTURE -->
+			  <h2 class="text-2xl leading-6 font-medium px-5 py-1 mb-4">
+			  	CONTEXT
+			  </h2>
+
+			  <div class="border-t border-b border-gray-200 mb-4">
+			    <dl>
+			    	<!--  Tag는 생성된 최소 포함되어 있을것으로 판단 -->
+			      <div class="bg-gray-50 dark:bg-gray-800 px-5 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+			        <dt class="text-sm font-medium">
+			          Tags
+			        </dt>
+			        <dd class="mt-1 text-sm text-blue-600 dark:text-blue-500 underline sm:mt-0 sm:col-span-2">
+			         {{ range .Params.Tags }}
+			        	 <a href="/tags/{{ . }}">{{ . }}</a>
+			         {{ end }}	 
+			        </dd>
+			      </div>
+			      {{ if .Params.creators }}
+			      <div class="bg-white dark:bg-gray-900 px-5 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+			        <dt class="text-sm font-medium">
+			          Creators
+			        </dt>
+			        <dd class="mt-1 text-sm text-blue-600 dark:text-blue-500 underline sm:mt-0 sm:col-span-2">
+			         {{ range .Params.Creators }}
+			        	 <a href="/creators/{{ . }}">{{ . }}</a>
+			         {{ end }}		
+			        </dd>
+			      </div>
+			      {{ else }}
+			      {{ end }}			      
+			      {{ if .Params.subjects }}
+			      <div class="bg-gray-50 dark:bg-gray-800 px-5 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+			        <dt class="text-sm font-medium">
+			          Subjects
+			        </dt>
+			        <dd class="mt-1 text-sm text-blue-600 dark:text-blue-500 underline sm:mt-0 sm:col-span-2">
+			         {{ range .Params.Subjects }}
+			        	 <a href="/subjects/{{ . }}">{{ . }}</a>
+			         {{ end }}		
+			        </dd>
+			      </div>
+			      {{ else }}
+			      {{ end }}
+			      {{ if .Params.sources }}	
+			      <div class="bg-white dark:bg-gray-900 px-5 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+			        <dt class="text-sm font-medium">
+			          Sources
+			        </dt>
+			        <dd class="mt-1 text-sm text-blue-600 dark:text-blue-500 underline sm:mt-0 sm:col-span-2">
+			         {{ range .Params.Sources }}
+			        	 <a href="/sources/{{ . }}">{{ . }}</a>
+			         {{ end }}	
+			        </dd>
+			      </div>
+			      {{ else }}
+			      {{ end }}
+			      {{ if .Params.venues }}	
+			      <div class="bg-gray-50 dark:bg-gray-800 px-5 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+			        <dt class="text-sm font-medium">
+			          Venues 
+			        </dt>
+			        <dd class="mt-1 text-sm text-blue-600 dark:text-blue-500 underline sm:mt-0 sm:col-span-2">
+			         {{ range .Params.Venues }}
+			        	 <a href="/venues/{{ . }}">{{ . }}</a>
+			         {{ end }}	
+			        </dd>
+			      </div>
+			      {{ else }}
+			      {{ end }}
+			    </dl>
+			  </div>
+			</div>
+	  </div>	  
+		</div>
+		<!-- Related Contents Here -->
+	  </div>
+	</div>
+{{ end }}

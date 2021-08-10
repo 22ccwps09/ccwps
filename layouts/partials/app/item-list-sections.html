@@ -1,0 +1,37 @@
+<section class="text-gray-900 body-font">
+  <div class="px-5 py-5 mx-auto">
+    <div class="flex flex-wrap -m-4">
+      {{ $section := .Site.GetPage "section" .Section }}
+      {{ .TableOfContents }}
+        {{ $childpages := union .Sections .Pages }}
+        {{ if $childpages }}
+          {{ range $childpages.ByTitle }}
+            <div class="xl:w-1/3 md:w-1/2 p-4">
+              <a href="{{ .Permalink }}">
+                <div class="bg-gray-100 hover:bg-gray-200 border border-gray-100 dark:bg-gray-900 dark:hover:bg-gray-700 dark:border dark:border-gray-200 p-6 rounded-lg">
+                  {{ if .Params.image }}
+                    <img class="h-40 rounded w-full object-cover object-center mb-6" src="{{ .Params.image | absURL }}" alt="item image">
+                  {{ else }}
+                    <img class="h-40 rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/462x384" alt="item image">
+                  {{ end }}
+                  <div class="h-40 overflow-hidden">
+                    <h6 class="tracking-widest text-blue-500 dark:text-blue-400 text-xs font-medium title-font">{{ .Params.identifier }}</h3>
+                    <h2 class="text-lg text-gray-900 dark:text-gray-100 font-medium title-font mb-4">{{ .Title }}</h2>
+                    <p class="leading-relaxed text-gray-900 dark:text-gray-100 text-sm">{{ .File.Path }}</p>
+                    <p class="leading-relaxed text-gray-900 dark:text-gray-100 text-base overflow-ellipsis">{{ .Params.description }}</p>
+                  </div>
+                </div>
+              </a>
+            </div>
+          {{ end }}
+          {{ else }}
+            <div class="xl:w-1/3 md:w-1/2 p-4 h-screen text-gray-900 dark:text-gray-100">
+                현재 포함된 자료가 없습니다. 
+            </div>
+        {{ end }}
+    </div>
+    <div class="paginator">
+      {{ template "_internal/pagination.html" . }}
+    </div>
+  </div>
+</section>  

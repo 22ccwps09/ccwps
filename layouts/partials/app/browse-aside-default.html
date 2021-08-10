@@ -1,0 +1,39 @@
+<!-- section 구조로 분칠되어 있는 구조에 aside를 뿌립니다. -->
+<div class="bg-gray-100 font-sans rounded-lg">
+  <div class="flex flex-col sm:flex-row sm:justify-around">
+    <div class="w-full h-full bg-white dark:bg-gray-900 py-5 rounded-lg">
+      <h1 class="text-2xl px-5 py-5">탐색</h1>
+      <nav>
+        {{ with .Site.GetPage "/" }}
+        {{ range where .Sections.ByTitle "Type" "items" }}
+        {{ $child_pages := union .Sections .Pages }}
+        {{ range $child_pages.ByTitle }}
+          <div x-data="{ open: true }">           
+            <button @click="open = !open" class="w-full flex justify-between items-center py-3 px-6 text-gray-900 dark:text-gray-100 cursor-pointer hover:bg-gray-100 hover:text-gray-700 focus:outline-none">
+              <span class="flex items-center">
+                <a href="{{.Permalink}}">
+                  <span class="font-medium">{{ .Title }}</span>
+                </a>  
+              </span>
+              {{ if or (.Sections) (.Pages) }}
+                <div class="right-arrow"></div>
+              {{ end }} 
+              <span>
+                <svg class="h-4 w-4" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path x-show="! open" d="M9 5L16 12L9 19" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;"></path>
+                    <path x-show="open" d="M19 9L12 16L5 9" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
+                </svg>
+              </span>
+            </button>
+            <!-- 2뎁스 이하 메뉴 노출 -->
+            <div x-show="open" class="text-gray-600">
+             {{ partial "app/browse-aside-recursive.html" . }}
+            </div>
+          </div>
+        {{ end }}
+        {{ end }}
+        {{ end }}             
+      </nav>
+    </div>
+  </div>
+</div>
