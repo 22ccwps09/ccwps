@@ -2,7 +2,7 @@ baseURL = "https://ccwps.durumi.io/"
 languageCode = "ko-kr"
 title = "냉전평화연구센터"
 description = "동아시아 및 한국의 전쟁･냉전, 평화, 일제의 식민지배 피해 및 일본군 ‘위안부’ 문제 관련 자료 조사와 연구, 교육 등의 활동을 통해 학문 발전에 이바지하는 것을 설립 목적으로 하며, (탈)냉전 평화 연구의 거점 싱크탱크, 아시아 최고 수준의 냉전 평화 아카이브, (탈)냉전 평화 교육, 정책 개발, 교류 협력의 허브를 구축하는 비전을 갖고 있다."
-theme = [ "tailwind-aa-theme", "hugo-search-fuse-js-aa" ]
+theme = [ "tailwind-aa-theme-master", "hugo-search-fuse-js-aa" ]
 
 [build]
 writeStats = true
@@ -17,18 +17,18 @@ writeStats = true
 [menu]
 
  [[menu.main]]
-  name = "File Browse"
+  name = "탐색"
   URL = "/items"
   weight = 1
 
  [[menu.main]]
-  name = "Search"
+  name = "검색"
   URL = "/search"
   weight = 2  
 
  [[menu.main]]
-  name = "Tags"
-  URL = "/tags"
+  name = "Creators"
+  URL = "/creators"
   weight = 3
 
  [[menu.main]]
@@ -47,11 +47,6 @@ writeStats = true
   weight = 6   
 
  [[menu.main]]
-  name = "Post"
+  name = "공지"
   URL = "/posts"
   weight = 7 
-
- [[menu.main]]
-  name = "Sitemap"
-  URL = "/sitemap.xml"
-  weight = 8

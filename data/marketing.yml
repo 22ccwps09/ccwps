@@ -150,6 +150,14 @@ featuredItems:
       creator: 합본, NARA
       url : https://www.youtube.com/embed/mmH1yYhYhis    
 
+############################ featured-No ##########################
+featuredNumbers:
+  enable : true
+  title : 냉전평화연구센터 디지털아카이브 
+  subtitle : items 공개현황
+  content : 2021년 현재 아카이브는 아래와 같은 아이템 및 연관 콘텐츠를 제공하고 있습니다. 관련된 아이템들은 직접 확인할 수 있습니다.
+  image : img/cover-ccwps.jpg
+
 ############################ hero-right/left ##########################
 heroRight:
   enable : true
@@ -173,15 +181,22 @@ heroRight:
 ############################ two box ##########################
 twobox:
   title : 2box 설명
+
   firstBox:
-    - title : Free 버전
+    - title : 자료조사
+      subtitle : 학술연구
       content : Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque praesentium nisi officiis maiores quia sapiente totam omnis vel sequi corporis ipsa incidunt reprehenderit recusandae maxime perspiciatis iste placeat architecto, mollitia delectus ut ab quibusdam. Magnam cumque numquam tempore reprehenderit illo, unde cum omnis vel sed temporibus, repudiandae impedit nam ad enim porro, qui labore fugiat quod suscipit fuga necessitatibus. Perferendis, ipsum? Cum, reprehenderit. Sapiente atque quam vitae, magnam dolore consequatur temporibus harum odit ab id quo qui aspernatur aliquid officiis sit error asperiores eveniet quibusdam, accusantium enim recusandae quas ea est! Quaerat omnis, placeat vitae laboriosam doloremque recusandae mollitia minima!
       urlLabel : 더 알아보기
       url : http://durumi.io
 
   secondBox:
-    - title : Custom 버전
-      content : Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque praesentium nisi officiis maiores quia sapiente totam omnis vel sequi corporis ipsa incidunt reprehenderit recusandae maxime perspiciatis iste placeat architecto, mollitia delectus ut ab quibusdam. Magnam cumque numquam tempore reprehenderit illo, unde cum omnis vel sed temporibus, repudiandae impedit nam ad enim porro, qui labore fugiat quod suscipit fuga necessitatibus. Perferendis, ipsum? Cum, reprehenderit. Sapiente atque quam vitae, magnam dolore consequatur temporibus harum odit ab id quo qui aspernatur aliquid officiis sit error asperiores eveniet quibusdam, accusantium enim recusandae quas ea est! Quaerat omnis, placeat vitae laboriosam doloremque recusandae mollitia minima!
+    - title : 정책개발
+      subtitle : 교육개발
+      content : 
+        Lorem, ipsum dolor sit amet 
+        consectetur adipisicing elit.
+        Cumque praesentium nisi officiis maiores
+        quia sapiente totam omnis vel sequi corporis ipsa incidunt reprehenderit recusandae maxime perspiciatis iste placeat architecto, mollitia delectus ut ab quibusdam. Magnam cumque numquam tempore reprehenderit illo, unde cum omnis vel sed temporibus, repudiandae impedit nam ad enim porro, qui labore fugiat quod suscipit fuga necessitatibus. Perferendis, ipsum? Cum, reprehenderit. Sapiente atque quam vitae, magnam dolore consequatur temporibus harum odit ab id quo qui aspernatur aliquid officiis sit error asperiores eveniet quibusdam, accusantium enim recusandae quas ea est! Quaerat omnis, placeat vitae laboriosam doloremque recusandae mollitia minima!
       urlLabel : 더 알아보기
       url : http://durumi.io
 

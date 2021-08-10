@@ -1,0 +1,11 @@
+{{ define "header" }}
+  {{ partial "basic/header_logo.html" . }}
+{{ end }}
+
+{{ define "main" }}
+	{{ partial "marketing/featured-numbers" . }}
+  <!-- 안내를 위한 리서치가이드 -->
+  <!-- 공개된 컬렉션에 대한 설명 -->
+	<!-- 공개하고 있는 아이템의 전체적인 숫자 데이터 -->
+	{{ partial "app/simple-browse" . }}
+{{ end }}
