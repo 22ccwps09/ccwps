@@ -16,16 +16,21 @@
 			    <h3 class="text-4xl leading-6 font-medium  py-5 mb-4">
 			      {{ .Title }} 
 			    </h3>
-			    <!-- item IMG / PDF / Youtube -->
-			    <div class="mt-1 max-w-2xl">
-			    	{{ if .Params.components }}		
-			      	{{ range .Params.Components }}
-			      		<img class="h-full rounded w-full object-cover object-center mb-6" src="{{ . | absURL }}" alt="item object">
-			      	{{ end }}	
-			    	{{ else }}
-			    		<img class="h-full rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/462x384" alt="item object">
-			    	{{ end }}
-			    </div>
+			    <!-- Youtube / Vimeo -->
+			    {{ if .Params.link }}	
+			    	<iframe class="rounded w-full h-96 aspect-w-4 aspect-h-3" src="{{ .Params.link }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			    {{ else }}
+				    <!-- item IMG / PDF / Youtube -->
+				    <div class="mt-1 max-w-2xl">
+				    	{{ if .Params.components }}		
+				      	{{ range .Params.Components }}
+				      		<img class="h-full rounded w-full object-cover object-center mb-6" src="{{ . | absURL }}" alt="item object">
+				      	{{ end }}	
+				    	{{ else }}
+				    		<img class="h-full rounded w-full object-cover object-center mb-6" src="https://dummyimage.com/462x384" alt="item object">
+				    	{{ end }}
+				    </div>
+				  {{ end }}
 			  </div>
 			  <!--  IDENTITY STATEMENT AREA -->
 			  <h2 class="text-2xl leading-6 font-medium px-5 py-1 mb-4">
@@ -146,7 +151,7 @@
 			        <dt class="text-sm font-medium">
 			          Tags
 			        </dt>
-			        <dd class="mt-1 text-sm text-blue-600 dark:text-blue-500 underline sm:mt-0 sm:col-span-2">
+			        <dd class="mt-1 text-sm text-blue-600 dark:text-blue-500 sm:mt-0 sm:col-span-2">
 			         {{ range .Params.Tags }}
 			        	 <a href="/tags/{{ . }}">{{ . }}</a>
 			         {{ end }}	 
@@ -157,7 +162,7 @@
 			        <dt class="text-sm font-medium">
 			          Creators
 			        </dt>
-			        <dd class="mt-1 text-sm text-blue-600 dark:text-blue-500 underline sm:mt-0 sm:col-span-2">
+			        <dd class="mt-1 text-sm text-blue-600 dark:text-blue-500 sm:mt-0 sm:col-span-2">
 			         {{ range .Params.Creators }}
 			        	 <a href="/creators/{{ . }}">{{ . }}</a>
 			         {{ end }}		
@@ -170,7 +175,7 @@
 			        <dt class="text-sm font-medium">
 			          Subjects
 			        </dt>
-			        <dd class="mt-1 text-sm text-blue-600 dark:text-blue-500 underline sm:mt-0 sm:col-span-2">
+			        <dd class="mt-1 text-sm text-blue-600 dark:text-blue-500 sm:mt-0 sm:col-span-2">
 			         {{ range .Params.Subjects }}
 			        	 <a href="/subjects/{{ . }}">{{ . }}</a>
 			         {{ end }}		
@@ -183,7 +188,7 @@
 			        <dt class="text-sm font-medium">
 			          Sources
 			        </dt>
-			        <dd class="mt-1 text-sm text-blue-600 dark:text-blue-500 underline sm:mt-0 sm:col-span-2">
+			        <dd class="mt-1 text-sm text-blue-600 dark:text-blue-500 sm:mt-0 sm:col-span-2">
 			         {{ range .Params.Sources }}
 			        	 <a href="/sources/{{ . }}">{{ . }}</a>
 			         {{ end }}	
@@ -196,7 +201,7 @@
 			        <dt class="text-sm font-medium">
 			          Venues 
 			        </dt>
-			        <dd class="mt-1 text-sm text-blue-600 dark:text-blue-500 underline sm:mt-0 sm:col-span-2">
+			        <dd class="mt-1 text-sm text-blue-600 dark:text-blue-500 sm:mt-0 sm:col-span-2">
 			         {{ range .Params.Venues }}
 			        	 <a href="/venues/{{ . }}">{{ . }}</a>
 			         {{ end }}	

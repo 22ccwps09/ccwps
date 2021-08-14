@@ -1,0 +1,30 @@
+{{ define "header" }}
+  {{ partial "basic/header_logo.html" . }}
+{{ end }}
+
+{{ define "main" }}
+	<section class="text-gray-900 bg-gray-100 dark:text-gray-100 dark:bg-gray-800 body-font overflow-hidden">
+	  <div class="container px-5 py-24 mx-auto">
+	    <div class="-my-8 divide-y-2 divide-gray-100">
+	    	{{ range where .Site.RegularPages "Type" "posts" }}
+	      <div class="py-8 flex flex-wrap md:flex-nowrap">
+	        <div class="md:w-64 md:mb-0 mb-6 flex-shrink-0 flex flex-col">
+	          <span class="font-semibold title-font text-gray-700 dark:text-gray-300">CATEGORY</span>
+	          <span class="mt-1 text-gray-500 dark:text-gray-400 text-sm">{{ .Date.Format "2006-01-02" }}</span>
+	        </div>
+	        <div class="md:flex-grow">
+	          <h2 class="text-2xl font-medium dark:text-gray-100 title-font mb-2">{{ .Title}}</h2>
+	          <p class="leading-relaxed">{{ .Summary }} </p>
+	          <a href="{{ .Permalink }}"class="text-blue-600 dark:text-blue-500 inline-flex items-center mt-4">더 보기
+	            <svg class="w-4 h-4 ml-2" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round">
+	              <path d="M5 12h14"></path>
+	              <path d="M12 5l7 7-7 7"></path>
+	            </svg>
+	          </a>
+	        </div>
+	      </div>
+	      {{ end }}
+	    </div>
+	  </div>
+	</section>
+{{ end }}
