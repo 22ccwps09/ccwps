@@ -1,9 +1,6 @@
 ---
 title: Search-Guide
-date: 2021-08-14
-tags: 
-  - CCWPS오픈기념
-  
+date: 2021-08-14  
 public_access_status: true
 ---
 

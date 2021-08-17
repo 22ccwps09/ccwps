@@ -1,9 +1,6 @@
 ---
 title: 디지털아카이브 기준
 date: 2021-08-01
-tags: 
-  - CCWPS오픈기념
-  
 public_access_status: true
 ---
 
