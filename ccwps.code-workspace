@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"name": "layouts",
+			"path": "layouts"
+		},
+		{
+			"name": "projec-root",
+			"path": "."
+		}
+	],
+	"settings": {}
+}
