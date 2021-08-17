@@ -1,0 +1,64 @@
+{{ define "header" }}
+  {{ partial "basic/header_logo.html" . }}
+{{ end }}
+
+{{ define "main" }}
+<!-- taxonmy.html 에 수정합니다. (이벤트 컬렉션을 보여주는 tag 화면) -->
+<section class="py-12 md:py-20 bg-blue-400 dark:bg-blue-500">
+  <div class="container px-4 mx-auto">
+    <div class="flex flex-wrap -mx-3">
+      <div class="relative w-full lg:w-1/3 mb-8 lg:mb-0 text-center lg:text-left text-gray-900 dark:text-gray-800">
+        <div class="max-w-md lg:max-w-xs lg:pr-16 mx-auto lg:ml-0 mb-6 lg:mb-0">
+          <h2 class="text-3xl md:text-4xl mb-4 font-bold font-heading">{{ .Title }} Collections </h2>
+          <p class="text-xs md:text-base leading-loose dark:text-gray-200">	
+          	{{ range .Pages.ByDate }}
+			        <a href="{{ .Permalink }}">{{ .Title }}</a><br>
+		    		{{ end }}
+		  		</p>
+        </div>
+      </div>
+      <div class="w-full lg:w-2/3 flex flex-wrap px-3">
+      	{{ range first 1 .Pages.ByDate }}
+          <iframe class="rounded w-full h-96 aspect-w-4 aspect-h-3" src="{{ .Params.link }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        {{ end }}
+      	<!-- <img class="rounded" src="https://images.unsplash.com/photo-1467803738586-46b7eb7b16a1?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1189&amp;q=80" alt=""> -->
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- new template -->
+<section class="text-gray-600 bg-white dark:bg-gray-900 body-font">
+  <div class="container px-5 pt-5 pb-24 mx-auto">
+    <div class="flex flex-col text-center w-full mb-2">
+    	{{ partial "app/browse-breadcrumb.html" . }}
+    </div>
+    <div class="flex flex-wrap -m-4">
+    	{{ range .Pages.ByDate }}
+	      <div class="lg:w-1/2 md:w-1/2 sm:w-full p-4">
+	      	<a href="{{ .Permalink }}">
+		        <div class="flex relative">  
+              {{ if .Params.components }}   
+                {{ range .Params.Components }}
+                  <img alt="gallery" class="absolute inset-0 w-full h-full object-cover object-center" src="{{ . | absURL }}" alt="item object">
+                {{ end }} 
+              {{ else }}
+                <img class="rounded object-center mb-6" src="https://dummyimage.com/462x384" alt="item object">
+              {{ end }}        
+		          <div class="px-8 py-10 relative z-10 w-full border-4 border-gray-200 bg-white dark:border-4 dark:border-gray-800 dark:bg-gray-900 opacity-0 hover:opacity-100">
+		            <h2 class="tracking-widest text-sm title-font font-medium text-blue-600 dark:text-blue-500 mb-1">{{ dateFormat "2006, January 2" .Date }}</h2>
+		            <h1 class="title-font text-lg font-medium text-gray-900 dark:text-gray-100 mb-3">{{ .Title }}</h1>
+		            <p class="leading-relaxed text-gray-800 dark:text-gray-300">{{ .Params.description }}</p>
+		            <p class="leading-relaxed text-gray-800 dark:text-gray-300">{{ .Params.level_of_description }}</p>
+		            <p class="leading-relaxed text-gray-800 dark:text-gray-300">{{ .Params.media_type }}</p>
+		            <p class="leading-relaxed text-gray-800 dark:text-gray-300">{{ .Params.subject }}</p>
+		          </div>
+		        </div>
+	      	</a>
+	      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+
+{{ end }}
