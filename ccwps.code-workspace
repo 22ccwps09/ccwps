@@ -5,6 +5,14 @@
 			"path": "layouts"
 		},
 		{
+			"name": "data",
+			"path": "data"
+		},
+		{
+			"name": "content",
+			"path": "content"
+		},
+		{
 			"name": "projec-root",
 			"path": "."
 		}
