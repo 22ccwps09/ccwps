@@ -1,11 +1,11 @@
 <!-- faq/alphineJS를 사용한 faq-accordion  -->
 <section class="mx-auto px-5 py-24 sm:px-8 bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100">
-  <div class="flex flex-col text-center w-full mb-20 px-72 md:px-36 sm:px-8">
+  <div class="flex flex-col text-center w-full mb-20 px-8 md:px-36 sm:px-8">
     <h2 class="text-xs text-blue-600 dark:text-blue-500 tracking-widest font-medium title-font mb-1">Cateogy</h2>
     <h1 class="text-3xl md:text-4xl font-bold font-heading">{{ .Site.Data.marketing.faq.title }}</h1>
     <p class="lg:w-2/3 mx-auto leading-relaxed text-base">{{ .Site.Data.marketing.faq.content }}</p>
   </div>
-  <div class="main-question mb-8 flex flex-col divide-y text-base px-72 md:px-36 sm:px-8">
+  <div class="main-question mb-8 flex flex-col divide-y text-base px-8 md:px-36 sm:px-8">
     {{ range $.Site.Data.marketing.faq.listItem }}
     <div class="item px-6 py-6" x-data="{isOpen : false}">
       <a href="#" class="flex items-center justify-between" @click.prevent="isOpen = true">
