@@ -19,6 +19,7 @@
 			    <!-- Youtube / Vimeo -->
 			    {{ if .Params.link }}	
 			    	<iframe class="rounded w-full h-96 aspect-w-4 aspect-h-3" src="{{ .Params.link }}" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			    	{{ .Params.shotlist }}
 			    {{ else }}
 				    <!-- item IMG / PDF / Youtube -->
 				    <div class="mt-1 max-w-2xl">
@@ -38,13 +39,13 @@
 			  </h2>
 			  <div class="border-t border-b border-gray-200 mb-4">
 			    <dl>
-			    	{{ if .Params.Reference_code }}
+			    	{{ if .Params.rg }}
 			      <div class="px-5 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
 			        <dt class="text-sm font-medium">
 			          Reference code(s)
 			        </dt>
 			        <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-			         {{ .Params.Reference_code}}
+			         {{ .Params.rg }}
 			        </dd>
 			      </div>
 			      {{ end }}
@@ -59,7 +60,7 @@
 			      </div>
 			      {{ if .Date }}
 			      <div class="bg-gray-50 dark:bg-gray-800 px-5 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
-			        <dt class="text-sm font-medium">
+			        <dt class="text-sm font-medium text-gray-500">
 			          Date(s)
 			        </dt>
 			        <dd class="mt-1 text-sm sm:mt-0 sm:col-span-2">
