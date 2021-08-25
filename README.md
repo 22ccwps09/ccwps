@@ -64,6 +64,7 @@
 - [x] 타입센스 검색엔진 테섭 / 검색엔진 react app 생성
 - [x] 편집가능한 tag 활용한 이벤트 메뉴로 활용
 - [x] 엑셀 & 마크다운 동기화 관련 방식 (생성 스크립트라도 / 원본- 엑셀 / 수정본 - markdown file)
+- [ ] 쌍 따옴표 처리 
 
 # data
 
@@ -76,10 +77,10 @@ $ rclone sync --progress /home/ubuntu/ccwps/content/items aa-data:ccwps
 - 영상외에 비주얼 구성을 위한 사진
 - 메타형식을 확정하기 위한 pdf 문서 (4-5개만 더 지정하면 좋겠다.)
 
-## markedown_handler
-- https://github.com/team-durumi/hugo_markdown_handler
+## Markdown Generator using comma separated values.
 ```
-ruby markdown_generator.rb -d '/home/ubuntu/ccwps/content/items' -r 'https://ccwps.s3.ap-northeast-2.amazonaws.com'
+$ cd path/to/this/repo
+$ ruby csv_converter.rb -f '/Users/woonjjang/hugo/ccwps/static/ccwps-items-210825.csv' -d '/Users/woonjjang/hugo/ccwps/content/items' -t 'venues sources creators'
 ```
 
 # develop
