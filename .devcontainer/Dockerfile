@@ -22,6 +22,18 @@ RUN apt-get update && apt-get install -y ca-certificates openssl git curl && \
 # Hugo dev server port
 EXPOSE 1313
 
+# Install rclone
+RUN curl https://rclone.org/install.sh | bash
+
+# Install debian-ruby
+ENV GEM_PATH="/usr/local/rvm/gems/default:/usr/local/rvm/gems/default@global" \
+    GEM_HOME="/usr/local/rvm/gems/default" \
+    MY_RUBY_HOME="/usr/local/rvm/rubies/default" \
+    PATH="/usr/local/rvm/rubies/default/bin:/usr/local/rvm/gems/default@global/bin:/usr/local/rvm/rubies/default/bin:/usr/local/rvm/bin:${PATH}"
+COPY library-scripts/ruby-debian.sh /tmp/library-scripts/
+RUN apt-get update && bash /tmp/library-scripts/ruby-debian.sh
+
+
 # [Optional] Uncomment this section to install additional OS packages you may want.
 #
 # RUN apt-get update && export DEBIAN_FRONTEND=noninteractive \
