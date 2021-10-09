@@ -40,12 +40,12 @@
 			  <div class="border-t border-b border-gray-200 mb-4">
 			    <dl>
 			    	{{ if .Params.rg }}
-			      <div class="px-5 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
+			      <div class="bg-gray-50 dark:bg-gray-800 px-5 py-5 sm:grid sm:grid-cols-3 sm:gap-4 sm:px-6">
 			        <dt class="text-sm font-medium">
 			          Reference code(s)
 			        </dt>
-			        <dd class="mt-1 text-sm text-gray-900 sm:mt-0 sm:col-span-2">
-			         {{ .Params.rg }}
+			        <dd class="mt-1 text-sm sm:mt-0 sm:col-span-2">
+			         {{ .Params.rg }}-{{ .Params.series }}-{{ .Params.file_number }}-{{ .Params.local_identifier }}
 			        </dd>
 			      </div>
 			      {{ end }}
