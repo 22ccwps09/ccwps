@@ -155,8 +155,8 @@ featuredNumbers:
   enable : true
   title : 냉전평화연구센터 디지털아카이브 
   subtitle : items 공개현황
-  content : 2021년 현재 아카이브는 아래와 같은 아이템 및 연관 콘텐츠를 제공하고 있습니다. 관련된 아이템들은 직접 확인할 수 있습니다.
-  image : img/cover-ccwps.jpg
+  content : 2021년 현재 아카이브는 아래와 같은 아이템 및 연관 콘텐츠를 제공하고 있습니다. 2021년 냉전평화연구센터가 수집한 한국전쟁 / DMZ 관련된 영상 아이템을 중심으로 오픈합니다.
+  image : img/R2-Scanned000016.jpg
 
 ############################ hero-right/left ##########################
 heroRight:
@@ -174,31 +174,31 @@ heroRight:
     url : https://youtu.be/4mhSsF5HrwY
   buttonTwo:
     enable : true
-    label : 줌 웨비나 참가링크
-    url : https://us02web.zoom.us/j/83405501877?pwd=TnpDSVFCWG94YVRBSFVuTmdtOGMvUT09
+    label : 심포지엄 페이지로 이동
+    url : /symposium-210327/
 
 
 ############################ two box ##########################
 twobox:
-  title : 2box 설명
+  title : 냉전평화연구센터 디지털아카이브 레코드그룹 설명
 
   firstBox:
-    - title : 자료조사
-      subtitle : 학술연구
-      content : Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque praesentium nisi officiis maiores quia sapiente totam omnis vel sequi corporis ipsa incidunt reprehenderit recusandae maxime perspiciatis iste placeat architecto, mollitia delectus ut ab quibusdam. Magnam cumque numquam tempore reprehenderit illo, unde cum omnis vel sed temporibus, repudiandae impedit nam ad enim porro, qui labore fugiat quod suscipit fuga necessitatibus. Perferendis, ipsum? Cum, reprehenderit. Sapiente atque quam vitae, magnam dolore consequatur temporibus harum odit ab id quo qui aspernatur aliquid officiis sit error asperiores eveniet quibusdam, accusantium enim recusandae quas ea est! Quaerat omnis, placeat vitae laboriosam doloremque recusandae mollitia minima!
-      urlLabel : 더 알아보기
-      url : http://durumi.io
+    - title : Record Group 1
+      subtitle : 한국전쟁
+      image : img/R2-Scanned000016.jpg
+      content : 미국 국립문서기록관리청(NARA) 2관에는 한국, 북한, 그리고 아시아의 분단과 냉전, 전쟁을 주제로 군인 및 민간인(신문·잡지사, 영화사 등 소속) 스틸사진가나 영상 카메라맨이 촬영하고 제작한 사진과 영상물들이 다수 존재한다. 전투, 일상, 피난민, 학살, 포로 내용을 다룰 첫 번째 레코드 그룹에서는 포로 시리즈를 먼저 공개한다.
+      urlLabel : 탐색 페이지에서 기록 보기
+      url : /items/r1-한국전쟁/
 
   secondBox:
-    - title : 정책개발
-      subtitle : 교육개발
+    - title : Record Group 2
+      subtitle : DMZ
+      image : img/R2-Scanned000016.jpg
       content : 
-        Lorem, ipsum dolor sit amet 
-        consectetur adipisicing elit.
-        Cumque praesentium nisi officiis maiores
-        quia sapiente totam omnis vel sequi corporis ipsa incidunt reprehenderit recusandae maxime perspiciatis iste placeat architecto, mollitia delectus ut ab quibusdam. Magnam cumque numquam tempore reprehenderit illo, unde cum omnis vel sed temporibus, repudiandae impedit nam ad enim porro, qui labore fugiat quod suscipit fuga necessitatibus. Perferendis, ipsum? Cum, reprehenderit. Sapiente atque quam vitae, magnam dolore consequatur temporibus harum odit ab id quo qui aspernatur aliquid officiis sit error asperiores eveniet quibusdam, accusantium enim recusandae quas ea est! Quaerat omnis, placeat vitae laboriosam doloremque recusandae mollitia minima!
-      urlLabel : 더 알아보기
-      url : http://durumi.io
+        수집된 영상들은 국문 Shotlist(영상 내용)이 작성되어 있다. 
+        한국전쟁 전후의 파주, 문산 지역 및 DMZ 지역에 대한 확인하지 못 했던 영상들에 대한 기록이다.
+      urlLabel : 탐색 페이지에서 기록 보기
+      url : /items/r2-dmz/
 
 
 ############################ FAQ ##########################

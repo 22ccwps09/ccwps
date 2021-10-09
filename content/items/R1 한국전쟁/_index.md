@@ -4,5 +4,5 @@ title: R1 한국전쟁
 weight: 1
 type: page
 components: 
-  - "/img/cover-ccwps.jpg"
+  - "/img/R1-013_1.jpg"
 ---

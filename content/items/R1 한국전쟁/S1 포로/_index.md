@@ -4,5 +4,5 @@ title: S1 포로
 weight: 
 type: page
 components: 
-  - "/img/cover-ccwps.jpg"
+  - "/img/R1-187.jpg"
 ---

@@ -4,5 +4,5 @@ title: R2 DMZ
 weight: 2
 type: page
 components: 
-  - "/img/cover-ccwps.jpg"
+  - "/img/R2-Scanned000016.jpg"
 ---
