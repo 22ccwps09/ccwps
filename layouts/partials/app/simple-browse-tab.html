@@ -13,13 +13,13 @@
       >
         <ul class="flex items-start justify-start">
           <li @click="openTab = 1" :class="{ '-mb-px': openTab === 1 }" class="-mb-px mr-1">
-            <a :class="openTab === 1 ? activeClasses : inactiveClasses" class="bg-white inline-block py-2 px-4 font-semibold" href="#video">video</a>
+            <a :class="openTab === 1 ? activeClasses : inactiveClasses" class="bg-white inline-block py-2 px-4 font-semibold" href="#video">영상</a>
           </li>
           <li @click="openTab = 2" :class="{ '-mb-px': openTab === 2 }" class="mr-1">
-            <a :class="openTab === 2 ? activeClasses : inactiveClasses" class="bg-white inline-block py-2 px-4 font-semibold" href="#photo">photo</a>
+            <a :class="openTab === 2 ? activeClasses : inactiveClasses" class="bg-white inline-block py-2 px-4 font-semibold" href="#photo">사진</a>
           </li>
           <li @click="openTab = 3" :class="{ '-mb-px': openTab === 3 }" class="mr-1">
-            <a :class="openTab === 3 ? activeClasses : inactiveClasses" class="bg-white inline-block py-2 px-4 font-semibold" href="#document">document</a>
+            <a :class="openTab === 3 ? activeClasses : inactiveClasses" class="bg-white inline-block py-2 px-4 font-semibold" href="#document">문서</a>
           </li>    
         </ul>
         <div class="w-full pt-4">
@@ -30,7 +30,7 @@
               <div class="h-full border-2 border-gray-200 border-opacity-60 rounded-lg overflow-hidden">
                 <div class="p-6 overflow-clip overflow-hidden ...">
                   <h2 class="tracking-widest text-xs title-font font-medium text-gray-400 mb-1">{{ .reference_code }}{{ .sources }}</h2>
-                  <h1 class="title-font text-lg font-medium text-gray-900 dark:text-gray-100 mb-3">{{ .title }} <!-- {{ .title_en }} --></h1>
+                  <h1 class="title-font text-lg font-medium text-blue-600 dark:text-blue-500 mb-3">{{ .title }} <!-- {{ .title_en }} --></h1>
                   <p class="leading-relaxed mb-3">{{ .description }}</p>
                   <p class="leading-relaxed mb-3">{{ .created_date }}</p>
                   <p class="leading-relaxed mb-3">{{ .time_courts }}</p>
@@ -40,14 +40,14 @@
                   <p class="leading-relaxed mb-3">{{ .file }}</p>
                   <p class="leading-relaxed mb-3">{{ .shotlist }}</p>
                   <p class="leading-relaxed mb-3">{{ .link }}</p>
-                  <p class="leading-relaxed mb-3">{{ .components }}</p>
+                  <p class="leading-relaxed mb-3">{{ .url }}</p>
 
                   <div class="flex items-center flex-wrap ">
-                    {{ if .components }}
+                    {{ if .url }}
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" class="w-4">
                           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1" />
                         </svg>
-                    <a href="{{ .components }}" class="text-blue-500 inline-flex items-center md:mb-2 lg:mb-0 overflow-hidden ..." target='_blank'>{{ .components }}
+                    <a href="https://ccwps.org/items{{ .url }}" class="text-blue-600 dark:text-blue-500 inline-flex items-center md:mb-2 lg:mb-0 overflow-hidden ...">https://ccwps.org/items{{ .url }}
                     </a>{{ end }}
                     <span class="text-gray-400 mr-3 inline-flex items-center lg:ml-auto md:ml-0 ml-auto leading-none text-sm pr-3 py-1">
                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">

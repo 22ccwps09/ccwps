@@ -3,9 +3,34 @@
 {{ end }}
 
 {{ define "main" }}
-	{{ partial "marketing/featured-numbers" . }}
-  <!-- 안내를 위한 리서치가이드 -->
-  <!-- 공개된 컬렉션에 대한 설명 -->
 	<!-- 공개하고 있는 아이템의 전체적인 숫자 데이터 -->
-	{{ partial "app/simple-browse" . }}
+	{{ partial "marketing/featured-numbers" . }}
+	
+	<!-- 대표 사진과 간단한 설명 -->
+	<section class="py-12 md:py-20">
+	  <div class="container px-4 mx-auto">
+	    <div class="max-w-lg mx-auto mb-12 text-center">
+	      <span class="inline-block py-1 px-3 text-xs font-semibold bg-blue-100 text-blue-600 rounded-xl">Open-Collection</span>
+	      <h2 class="text-2xl md:text-3xl mt-2 mb-4 font-bold font-heading">S1포로(RG1) 와 S1DMZ(RG2) 중심으로 104개 영상을 공개합니다. </h2>
+	      <!-- <p class="text-blueGray-400 leading-loose">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed luctus eget justo et iaculis.</p> -->
+	    </div>
+	    <div class="flex flex-wrap lg:flex-nowrap lg:items-center max-w-lg lg:max-w-full mx-auto">
+	      <div class="w-full lg:w-1/4 p-3"><img class="rounded object-cover mx-auto" src="/img/R1-013_1.jpg" alt=""></div>
+	      <div class="w-full lg:w-2/4 flex flex-col">
+	        <div class="flex items-end">
+	          <div class="w-2/3 p-3"><img class="rounded object-cover" src="/img/R1-187.jpg" alt=""></div>
+	          <div class="w-1/3 p-3"><img class="h-48 lg:h-32 rounded object-cover" src="/img/R1-007.jpg" alt=""></div>
+	        </div>
+	        <div class="flex items-start">
+	          <div class="w-1/3 p-3"><img class="h-48 lg:h-32 rounded object-cover" src="/img/R2-Scanned000065.jpg" alt=""></div>
+	          <div class="w-2/3 p-3"><img class="rounded object-cover" src="/img/R2-Scanned000082.jpg" alt=""></div>
+	        </div>
+	      </div>
+	      <div class="w-full lg:w-1/4 p-3"><img class="rounded object-cover mx-auto" src="/img/R2-Scanned000016.jpg" alt=""></div>
+	    </div>
+	  </div>
+	</section>
+
+	<!-- 공개된 item에 대한 목록 -->
+	{{ partial "app/simple-browse-tab" . }}
 {{ end }}
