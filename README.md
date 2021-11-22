@@ -62,7 +62,7 @@ $ rclone sync --progress /home/ubuntu/ccwps/content/items aa-data:ccwps
 ### Markdown Generator using comma separated values.
 ```
 $ cd path/to/this/repo
-$ ruby csv_converter.rb -f '/Users/woonjjang/hugo/ccwps/static/ccwps-items-210825.csv' -d '/Users/woonjjang/hugo/ccwps/content/items' -t 'venues sources creators'
+$ ruby csv_converter.rb -f '/workspaces/ccwps/static/items-211122.csv' -d '/workspaces/ccwps/content/items/dummy' -t 'venues sources creators subjects tags' -b 'public_access_status'
 ```
 
 # develop
