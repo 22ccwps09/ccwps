@@ -1,0 +1,26 @@
+title: 냉전평화연구센터
+baseURL: https://ccwps.org
+
+languageCode: ko-kr
+defaultContentLanguage: ko
+hasCJKLanguage: true
+paginate: 16
+
+build:
+  writeStats: true
+
+theme:
+  - github.com/team-durumi/tailwind-aa-theme
+  - github.com/team-durumi/hugo-search-fuse-js-aa
+
+permalinks:
+  items: /:section/:slug/
+
+googleAnalytics:
+
+taxonomies:
+  tag: tags
+  subject: subjects
+  creator: creators
+  venue: venues
+  source: sources
