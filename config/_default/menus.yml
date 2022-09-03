@@ -3,7 +3,7 @@ main:
     url: /items
     weight: -110
   - name: 검색
-    url: https://catalog.ccwps.org
+    url: /search
     weight: -100
   - name: 생산장소
     url: /venues
