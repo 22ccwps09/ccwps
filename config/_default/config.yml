@@ -1,4 +1,4 @@
-title: 냉전평화연구센터
+title: 냉전아시아 영상아카이브
 baseURL: https://ccwps.org
 
 languageCode: ko-kr
@@ -8,10 +8,6 @@ paginate: 16
 
 build:
   writeStats: true
-
-theme:
-  - github.com/team-durumi/tailwind-aa-theme
-  - github.com/team-durumi/hugo-search-fuse-js-aa
 
 permalinks:
   items: /:section/:slug/

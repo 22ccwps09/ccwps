@@ -1,0 +1,7 @@
+hugoVersion:
+  extended: true
+  min: "0.55.0"
+
+imports:
+- path: github.com/team-durumi/tailwind-aa-theme
+- path: github.com/team-durumi/hugo-search-fuse-js-aa
