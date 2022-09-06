@@ -62,14 +62,3 @@ main:
     url: /venues/
     parent: 컬렉션
     weight: 5
-  - name: 콘텐츠
-    url:
-    weight: -70
-  - name: Shorts
-    url: /shorts/
-    parent: 콘텐츠
-    weight: 1     
-  - name: 전시
-    url: /exhibitions/
-    parent: 콘텐츠
-    weight: 2               
