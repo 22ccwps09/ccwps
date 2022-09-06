@@ -2,6 +2,11 @@
 title: 디지털아카이브 기준
 date: 2021-08-01
 public_access_status: true
+categories: 
+  - "학술회의"
+  - "사업"
+  - "논문"
+  - "책"
 ---
 
 ## Data
