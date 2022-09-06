@@ -11,3 +11,22 @@ license:
   createor_of_work: 팀두루미
   link_to_creator_profile: https://durumi.io
   year_of_creation: 2022
+  
+footer:
+  logo: img/durumi.png
+  대표전화: 02-0000-0000
+  팩스: 02-0000-0000
+  주소: Somewhere in Seoul
+  이메일: team@durumi.io
+  url: http://github.com/team-durumi
+  caption: Github
+  github: http://github.com/team-durumi
+  fb: 
+  tw: 
+  instagram: 
+  linkedin:
+
+cfImagePrefix: 'https://durumi.io/cdn-cgi/image'
+cfImageStyles:
+  thumb: 'fit=scale-down,width=300'
+  full: 'fit=scale-down,width=1920'
